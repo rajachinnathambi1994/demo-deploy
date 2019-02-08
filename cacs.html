@@ -1,0 +1,2899 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=No">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="aNonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="aNonymous">
+
+  <title>Cacs - report </title>
+  <style>
+    h5.card-title{
+      color: #1883f7;
+    font-size: 14px;
+    font-weight: 500;
+    }
+    .title{
+      font-size:14px;
+      /* font-weight:600; */
+    }
+    .count{
+      font-size:14px;
+      font-weight:600;
+    }
+    .accordion .card{
+      border: 1px solid #efefef !important;
+    color: #4a4a4a;
+    border-radius: 0px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 1px #ececec;
+    /* border: 1px solid #dcdcdc9c; */
+    }
+    .card-header {
+    padding: 0.2rem 0.25rem;
+    }
+    .filter .form-group label{
+      font-size: 14px;
+      padding: 8px 0px;
+    }
+    .filter .form-control{
+      border-radius: 0px;
+    }
+    .filter{
+      background-color: #f7f7f7;
+    }
+    .top-title{
+      color: #1883f7;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Container p-5 m-3">
+    <h6 class="top-title">Reports</h6>
+    <div class="card filter p-3">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="form-group row">
+            <div class="col-md-3">
+              <label for="formGroupExampleInput" class="col-form-label">Age</label>
+            </div>
+            <div class="col-md-9 row">
+              <div class="col-md-5 px-0">
+                <input type="text" id="age" class="form-control" name="age" value="65" required="required">
+              </div> &nbsp; - &nbsp;
+              <div class="col-md-5 px-0">
+                <input type="text" id="age1" class="form-control" name="age1" value="56" required="required">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group row">
+            <div class="col-md-4">
+              <label class="m-0" for="exampleFormControlSelect1">Gender</label>
+            </div>
+            <div class="col-md-8">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Transegender</option>
+                <option selected="selected">All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group row">
+            <div class="col-md-4">
+              <label class="m-0" for="exampleFormControlSelect1">Socio ES</label>
+            </div>
+            <div class="col-md-8">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option selected="selected">All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group row">
+            <div class="col-md-4">
+              <label class="m-0" for="exampleFormControlSelect1">Residence</label>
+            </div>
+            <div class="col-md-8">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Rural</option>
+                <option>Urban</option>
+                <option selected="selected">All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-right">
+          <button type="button" class="btn btn-primary btn-sm float-right">Submit</button>
+      </div>
+    </div>
+    <div class="accordion mt-3" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#riskfactor" aria-expanded="true"
+              aria-controls="collapseOne">
+              RISK FACTORS
+            </button>
+          </h5>
+        </div>
+        <div id="riskfactor" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Family History</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">CAD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">SCD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Diabetes Mellitus</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1 yr </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 1 - 5 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 5 - 10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Systemic Hypertension</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1 yr </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 1 - 5 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 5 - 10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            10 yrs </label>
+                        </div>
+                        <div class="col-md-3">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Dyslipidemia</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1 yr </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 1 - 5 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 5 - 10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Physically inactive</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Sleep</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 4 hrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 4 - 6 hrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 6 - 8 hrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            8 hrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Self Perceived Stress</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Smoking</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">20</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Active </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Reformed </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <p class="sub-title m-2">Pack years</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1 yr </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 1 - 5 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 5 - 10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            10 yrs </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">5</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#pasthistory"
+              aria-expanded="false" aria-controls="collapseTwo">
+              PAST HISTORY
+            </button>
+          </h5>
+        </div>
+        <div id="pasthistory" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">H/o CV symptoms</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Angina</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Anginal equivalent</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">History</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">MI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">CAD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">BOTH</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">NoNE</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">History</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">PCI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">CABG</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">BOTH</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">NoNE</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-md-4">
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">History</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">STROKE</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">TIA</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">BOTH</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">NoNE</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">History of PAD</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Co morbidities</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">CKD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Hypothyroid</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Haematological disorders</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-md-4">
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">History of Medications</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Antiplatelets</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Statin</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#presentingsymptoms"
+              aria-expanded="false" aria-controls="collapseThree">
+              PRESENTING SYMPTOMS
+            </button>
+          </h5>
+        </div>
+        <div id="presentingsymptoms" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Angina</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Cardiac Arrest</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">FMC</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">PCI capable centre</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Others</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Time to FMC <span>hrs/mins</span></h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1 hr</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">1 - 3 hrs</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">3 - 6 hrs</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">3 - 6 hrs</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            12 hrs</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Mode of transport to FMC</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Ambulance</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Others</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Onset of symptoms to diagnosis</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 60 min</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">60 - 120 min</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 120 - 180 min</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            120 min</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#physicalexamination"
+              aria-expanded="false" aria-controls="collapseFour">
+              PHYSICAL EXAMINATION
+            </button>
+          </h5>
+        </div>
+
+        <div id="physicalexamination" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">BMI</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 18.5</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 18.5 - 24.99</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">25 - 29.99</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">30 - 34.99</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 35 - 39.99</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            40</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Systolic BP</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 90</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 90 - 140</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            140</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Diastolic BP</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 70</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 70 - 90</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            90</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> JVP </h5>
+                    <div class="card-text">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Elevated</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Not Elevated</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> PAD </h5>
+                    <div class="card-text">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Present</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Absent</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> CVS </h5>
+                    <div class="card-text">
+                      <p class="sub-title m-2">Murmur</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <p class="sub-title m-2">S3</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> Chest Crepitations </h5>
+                    <div class="card-text">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Other system examination </h5>
+                    <div class="card-text">
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Hepatomegaly</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Ascites</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Focal neurological </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#investigations"
+              aria-expanded="false" aria-controls="collapseFive">
+              INVESTIGATIONS
+            </button>
+          </h5>
+        </div>
+
+        <div id="investigations" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> ECG</h5>
+                    <div class="card-text">
+                      <p class="sub-title m-2">Normal</p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> ST Elevation</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Anterior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Inferior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Lateral</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Posterior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            RV</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            New onset LBBB</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            New onset RBBB</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> ST Elevation</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Anterior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Inferior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Lateral</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Diffuse</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"> T inversion</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Anterior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Inferior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Lateral</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Diffuse</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Q Wave</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Anterior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Inferior</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Lateral</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Diffuse</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Arrythmias</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Conduction Abnormalities</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Echo : RWMA</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            LAD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            RCA</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            LCX</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">LV function</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Normal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Abnormal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">EF(%)</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Mild</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Moderateb(30 - 40 %)</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Severe( <i class="fa fa-angle-left" aria-hidden="true"></i> 30)</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">RV Dysfunction</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Complications</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"></h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">MR</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            VSR</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Free Wall rupture</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            LV thrombus</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Bio markers</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Troponin I</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Normal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Elevated</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Troponin T</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Normal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Elevated</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">CKMB</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Normal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Elevated</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">hsTroponin I</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Normal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Elevated</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Hemoglobin</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 8 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            8 - 15 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i> 15 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Creatinine</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 1.3 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            1.3 - 1.5 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            1.5 - 2 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i> 2 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">HbA1c</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 6 %</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            6 - 7 %</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            7 - 9 % </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            9 - 11 % </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i> 11 mg/dl</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Lipid Profile</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> T.chol</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            HDL</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            VLDL</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            LDL</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i> 70</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">3</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            70 - 100</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">3</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            100 - 130</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">3</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i> 130</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">1</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            TGL</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Coronary Angiogram</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> SVD </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            2vd</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            3vd</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Non flow limiting CAD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Ectatic</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            SCAD</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Myocardial bridging</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Left main involvement</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Normal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">
+                            Abnormal</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#diagNosis" aria-expanded="false"
+              aria-controls="collapseSix">
+              DIAGNOSIS
+            </button>
+          </h5>
+        </div>
+
+        <div id="diagNosis" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"></h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">STEMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">NSTEMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">UNSTABLE</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">ANGINA</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title"></h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">AWMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">IWMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">LWMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">PWMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">RVMI</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingSeven">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#management" aria-expanded="false"
+              aria-controls="collapseSeven">
+              MANAGEMENT
+            </button>
+          </h5>
+        </div>
+
+        <div id="management" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Loading dose</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">No</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Yes</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Clopidogrel</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">300 mg</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 600 mg</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Ticagrelor</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title">Prasugrel</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Time to load</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-left" aria-hidden="true"></i> 60 mins</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 60 - 120 mins</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> 120 - 180 mins </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> <i class="fa fa-angle-right" aria-hidden="true"></i> 180 mins</label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Aspirin</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">P2Y12</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Clopidogrel </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Ticagrelor </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Prasugrel </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Statins</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Atorvastatin </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Rosuvastatin </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Betablocker</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Metoprolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Carvedilol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Bisoprolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Nebivolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Atenolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">ACI/ARB</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> ACEI </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Ramipril </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Enalapril </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Perindopril </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> ARB </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Losartan </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Valsartan </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Telmisartan </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row px-3">
+                        <div class="col-md-6">
+                          <label class="title"> Olmesartan </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> None </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">MRA</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Spironolactone </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Eplerenone </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Bisoprolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Nebivolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Atenolol </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Diuretics</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-2">
+                  <div class="card-body p-2">
+                    <h5 class="card-title">Others</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> No </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Yes </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Nitrates </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Ivabradine </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Trimetazidine </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Ranolazine </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> Nicorandil </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="title"> ARNI </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="count">10</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="aNonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="aNonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="aNonymous"></script>
+</body>
+
+</html>
